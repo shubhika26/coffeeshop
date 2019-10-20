@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Signup Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <p>UserId</p>
+            <input type="text" name="userid" placeholder="Enter Userid" required>
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter email" required>
+            <p>Password</p>
+            <input type="password" id="pwd1" placeholder="Enter Password" required>
+            <p>Confirm Password</p>
+            <input type="password" id="pwd2" placeholder="Enter Password" required>
+            <input type="submit" value="Login" onclick="check()">
+        </form>
+    </div>
+</body>
+<script>
+    function check(){
+        var a=document.getElementById("pwd1").value;
+        var b=document.getElementById("pwd2").value;
+        if(a!=b){
+            alert("Please match your password");
+        }
+        else if(a!=""&&b!=""){
+            alert("Get ready for mountain adventures");
+        }
+    }
+</script>
+</head>
+</html>
